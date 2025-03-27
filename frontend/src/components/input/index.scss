@@ -1,0 +1,56 @@
+.input-container {
+  margin-bottom: 0.5rem;
+
+  // layout
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  // size
+  .basic {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .basic-text {
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  .sm {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+
+  .sm-text {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .lg {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .lg-text {
+    padding: 0.2rem 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  // label
+  .label-text {
+    font-weight: bold;
+  }
+
+  // input
+  .input {
+    outline: none; /* 移除點擊時的 outline */
+  }
+}
