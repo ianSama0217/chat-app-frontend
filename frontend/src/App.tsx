@@ -1,5 +1,6 @@
 import React from "react";
 import Input from "./components/input";
+import Button from "./components/button";
 
 function App() {
   const [username, setUsername] = React.useState("");
@@ -83,6 +84,82 @@ function App() {
           layout="row"
           size="sm"
         />
+        {/* 按鈕 */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <Button title="button1" onClick={() => setUsername("style")} />
+          <Button
+            title="button2"
+            style="secondary"
+            onClick={() => setUsername("style")}
+          />
+          <Button
+            title="button3"
+            style="success"
+            onClick={() => setUsername("style")}
+          />
+          <Button
+            title="button4"
+            style="danger"
+            onClick={() => setUsername("style")}
+          />
+          <Button
+            title="button5"
+            style="warning"
+            onClick={() => setUsername("style")}
+          />
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <Button title="button1" onClick={() => setUsername("size")} />
+          <Button
+            title="button2"
+            style="secondary"
+            size="sm"
+            onClick={() => setUsername("szie")}
+          />
+          <Button
+            title="button3"
+            style="success"
+            size="lg"
+            onClick={() => setUsername("size")}
+          />
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            height: "100px",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <Button title="button1" onClick={() => setUsername("size")} />
+          <Button
+            title="button2"
+            style="secondary"
+            size="sm"
+            onClick={() => setUsername("szie")}
+          />
+          <Button
+            title="button3"
+            style="success"
+            size="lg"
+            onClick={() => setUsername("size")}
+          />
+        </div>
       </div>
       <h2>value:{username}</h2>
     </>
