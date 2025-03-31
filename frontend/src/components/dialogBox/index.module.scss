@@ -1,0 +1,45 @@
+.dialogBox-component {
+  margin: 5px;
+
+  .dialog-area {
+    display: flex;
+
+    .content {
+      background-color: #a1e3f9;
+      padding: 8px 12px;
+      text-align: left;
+      font-size: 1rem;
+      word-wrap: break-word;
+    }
+
+    .mine {
+      border-radius: 10px 0 10px 10px;
+    }
+
+    .theirs {
+      margin-top: 0.75rem;
+      border-radius: 0 10px 10px 10px;
+      flex: 1; /* 讓 thries content 佔滿剩餘空間 */
+    }
+
+    .time {
+      font-size: 0.65rem;
+      margin-bottom: 0.25rem;
+      color: #a3a3a3;
+      align-self: end;
+    }
+  }
+}
+
+// layout
+.mine-layout {
+  max-width: 50%;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.theirs-layout {
+  max-width: 40%;
+  align-self: flex-start;
+  text-align: left;
+}

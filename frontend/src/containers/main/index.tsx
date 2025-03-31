@@ -1,6 +1,7 @@
 import React from "react";
 import RoleBox from "../../components/roleBox";
 import Headshot from "../../components/headshot";
+import DialogBox from "../../components/dialogBox";
 
 const Main: React.FC = () => {
   return (
@@ -80,10 +81,25 @@ const Main: React.FC = () => {
         />
       </div>
 
-      <div className="headshot-test">
-        <Headshot onClick={() => console.log("點擊頭像sm...")} size="sm" />
-        <Headshot onClick={() => console.log("點擊頭像...")} size="basic" />
-        <Headshot onClick={() => console.log("點擊頭像lg...")} size="lg" />
+      <div
+        className="chatroom column"
+        style={{ border: "1px solid grey", width: "75vw" }}
+      >
+        <DialogBox content={"hello!"} />
+        <DialogBox content={"hello!"} isMe={false} />
+        <DialogBox content={"借我錢!"} />
+        <DialogBox content={"為啥!"} isMe={false} />
+        <DialogBox
+          content={
+            "不要!不要!不要!不要!不要!不要!不要!不要!不要!不要!不要!不要!"
+          }
+          isMe={false}
+        />
+        <DialogBox
+          content={
+            "借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!"
+          }
+        />
       </div>
     </div>
   );
