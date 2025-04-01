@@ -2,17 +2,20 @@ import React from "react";
 import RoleBox from "../../components/roleBox";
 import Headshot from "../../components/headshot";
 import DialogBox from "../../components/dialogBox";
+import Tag from "../../components/tag";
 
 const Main: React.FC = () => {
   return (
     <div className="row">
       <div className="sidebar" style={{ width: "25vw", minHeight: "100vh" }}>
+        <Tag title={"about me"} hasIcon={false} />
         <RoleBox
           img={<Headshot />}
           name={"自己!"}
           type="self"
           onClick={() => {}}
         />
+        <Tag title={"好友"} number={6} />
         <RoleBox img={<Headshot />} name={"聯絡人!"} onClick={() => {}} />
         <RoleBox
           img={<Headshot />}
@@ -34,6 +37,7 @@ const Main: React.FC = () => {
           notice={true}
         />
         <RoleBox img={<Headshot />} name={"聯絡人6!"} onClick={() => {}} />
+        <Tag title={"群組"} number={2} />
         <RoleBox
           img={<Headshot iconType="group" />}
           name={"群組!"}
@@ -49,6 +53,7 @@ const Main: React.FC = () => {
           onClick={() => {}}
           notice={true}
         />
+        <Tag title={"陌生訊息"} number={5} />
         <RoleBox
           img={<Headshot />}
           name={"陌生人!"}
