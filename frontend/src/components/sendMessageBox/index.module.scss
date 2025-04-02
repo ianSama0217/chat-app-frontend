@@ -1,0 +1,93 @@
+.sendMessageBox-component {
+  width: 80%;
+  margin-top: auto;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .input-wrapper {
+    width: 100%;
+    position: relative;
+
+    .message-textarea {
+      width: 95%;
+      height: 15vh;
+      font-size: 1rem;
+      padding: 0.5rem 0.8rem 2rem 0.8rem;
+      overflow-y: auto;
+      resize: none;
+      outline: none;
+      border-radius: 20px;
+      border: 1px solid #578fca;
+
+      /* 滾動條樣式 */
+      &::-webkit-scrollbar {
+        width: 8px;
+        margin-right: 10rem;
+      }
+
+      /* 滾動條滑塊（拖動部分） */
+      &::-webkit-scrollbar-thumb {
+        background-color: #578fca;
+        border-radius: 5px;
+      }
+    }
+
+    .message-input {
+      width: 95%;
+      height: 5vh;
+      font-size: 1rem;
+      padding: 0.2rem 20% 0.2rem 0.8rem;
+      border-radius: 20px;
+      border: 1px solid #578fca;
+      outline: none;
+    }
+
+    .icon-bar {
+      background-color: white;
+      width: 15%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .icon {
+        font-size: 1.25rem;
+        color: #578fca;
+        cursor: pointer;
+      }
+
+      .hidden {
+        display: none;
+      }
+    }
+
+    .icon-bar-textarea {
+      position: absolute;
+      right: 8%;
+      top: 75%;
+      transform: translateY(-50%);
+    }
+
+    .icon-bar-input {
+      position: absolute;
+      right: 8%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .send-icon {
+    font-size: 1.45rem;
+    color: #578fca;
+    cursor: pointer;
+  }
+
+  .send-icon-textarea {
+    font-size: 1.45rem;
+    color: #578fca;
+    cursor: pointer;
+    align-self: end;
+    margin-bottom: 1rem;
+  }
+}

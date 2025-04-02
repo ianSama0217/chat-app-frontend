@@ -3,6 +3,7 @@ import RoleBox from "../../components/roleBox";
 import Headshot from "../../components/headshot";
 import DialogBox from "../../components/dialogBox";
 import Tag from "../../components/tag";
+import SendMessageBox from "../../components/sendMessageBox";
 
 const Main: React.FC = () => {
   return (
@@ -88,7 +89,7 @@ const Main: React.FC = () => {
 
       <div
         className="chatroom column"
-        style={{ border: "1px solid grey", width: "75vw" }}
+        style={{ border: "1px solid grey", width: "75vw", height: "100vh" }}
       >
         <DialogBox content={"hello!"} />
         <DialogBox content={"hello!"} isMe={false} />
@@ -105,6 +106,8 @@ const Main: React.FC = () => {
             "借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!"
           }
         />
+
+        <SendMessageBox />
       </div>
     </div>
   );
