@@ -4,6 +4,7 @@ import Headshot from "../../components/headshot";
 import DialogBox from "../../components/dialogBox";
 import Tag from "../../components/tag";
 import SendMessageBox from "../../components/sendMessageBox";
+import DateTag from "../../components/dateTag";
 
 const Main: React.FC = () => {
   return (
@@ -91,21 +92,23 @@ const Main: React.FC = () => {
         className="chatroom column"
         style={{ border: "1px solid grey", width: "75vw", height: "100vh" }}
       >
+        <DateTag date="2024-4-1" />
         <DialogBox content={"hello!"} />
         <DialogBox content={"hello!"} isMe={false} />
+        <DateTag date="2024-4-2" />
         <DialogBox content={"借我錢!"} />
         <DialogBox content={"為啥!"} isMe={false} />
-        <DialogBox
-          content={
-            "不要!不要!不要!不要!不要!不要!不要!不要!不要!不要!不要!不要!"
-          }
-          isMe={false}
-        />
+        <DateTag date="2024-5-12" />
         <DialogBox
           content={
             "借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!借我錢!"
           }
         />
+        <DialogBox content={"先洗澡"} isMe={false} />
+        <DateTag date="2025-4-1" />
+        <DialogBox content={"ok"} />
+        <DateTag date="2025-4-2" />
+        <DialogBox content={"洗好了嗎?!"} />
 
         <SendMessageBox />
       </div>
